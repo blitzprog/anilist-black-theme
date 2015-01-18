@@ -59,33 +59,17 @@ nav br {
 	display: none;
 }
 
-#list_header {
-	width: 100%;
-	text-align: left;
-	float: left;
-	background: transparent !important;
-	border: none !important;
-	box-shadow: none;
-	margin-left: 0;
-	position: absolute;
+a,
+.forum__row__title {
+	color: rgba(255, 255, 255, 0.6) !important;
 }
 
-.display_name {
-	font-size: 200% !important;
-	margin-bottom: 1em !important;
-	margin-top: 0;
-	padding-top: 0;
-}
-
-.al_link {
-	visibility: hidden
-}
-
-.al_link:before {
-	font-size: 80% !important;
-	content: " (^o^)／";
-	opacity: 0.3;
-	visibility: visible;
+a:hover,
+.forum__row__title:hover,
+.activity_wrap .activity__nav .reply:hover,
+.activity_wrap .activity__nav .replies:hover {
+	color: rgba(255, 255, 255, 1.0) !important;
+	text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
 h1,
@@ -99,27 +83,6 @@ h3 {
 	border: none !important;
 }
 
-#watching .row__episodes {
-	display: table-cell;
-	width: auto;
-	float: right;
-}
-
-#watching .row__score {
-	opacity: 0.5
-}
-
-.list {
-	color: rgba(255, 255, 255, 0.85);
-	background-color: rgba(0, 0, 0, 0.08);
-	border-radius: 8px;
-}
-
-.update {
-	color: rgba(0, 0, 0, 0.85)
-}
-
-.rtitle,
 .lang-tabs {
 	background: none !important
 }
@@ -133,39 +96,6 @@ footer .recent {
 	background: rgba(0, 0, 0, 0.1)
 }
 
-.row__title:before {
-	opacity: 0.2
-}
-
-tr {
-	border: none
-}
-
-/*.tag_airing {
-	display: block;
-	color: rgba(242, 242, 242, 0.8);
-	transition: all 250ms ease;
-	margin-left: 1.7em;
-}*/
-
-.list__tag {
-	float: right
-}
-
-.hint {
-	margin-left: -30em;
-	opacity: 0.0;
-}
-
-.list__tag:hover .hint {
-	opacity: 0.8;
-	transition: all 300ms ease;
-}
-
-thead,
-.row__episodes,
-.row__type,
-.ml_link,
 .logo__wrap {
 	display: none
 }
@@ -339,19 +269,6 @@ thead,
 	content: " 】"
 }
 
-a,
-.forum__row__title {
-	color: rgba(255, 255, 255, 0.6) !important
-}
-
-a:hover,
-.forum__row__title:hover,
-.activity_wrap .activity__nav .reply:hover,
-.activity_wrap .activity__nav .replies:hover {
-	color: rgba(255, 255, 255, 1.0) !important;
-	text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
-}
-
 .tag,
 .thread__body__tags,
 .row__counts,
@@ -378,7 +295,7 @@ a:hover,
 	color: rgb(255, 255, 255)
 }
 
-.thread__body img {
+.thread__body img, markdown img {
 	border-radius: 5px;
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
 }
@@ -487,6 +404,34 @@ a:hover,
 	border: none
 }
 
+.markdown_spoiler:before {
+	padding: 0.25em 0.5em;
+	content: "Spoiler";
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.1);
+	color: rgb(240, 240, 240);
+}
+
+.markdown_spoiler span {
+	background: transparent !important;
+	color: rgb(240, 240, 240);
+}
+
+.branch {
+	padding-right: 0;
+	border: none;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.forum__thread__comments li:first-of-type {
+	margin-left: 6px;
+}
+
+.forum__thread__comments .comment .comment__user {
+	margin-top: 6px;
+}
+
 .current {
 	color: rgb(255, 255, 255) !important
 }
@@ -497,4 +442,8 @@ a:hover,
 
 input::selection {
 	background: rgba(0, 0, 0, 0.3);
+}
+
+.list_wrapper a {
+	color: inherit !important;
 }
