@@ -420,7 +420,7 @@ footer .recent {
 .branch {
 	padding-right: 0;
 	border: none;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.04);
 	border-radius: 5px;
 }
 
@@ -430,6 +430,10 @@ footer .recent {
 
 .forum__thread__comments .comment .comment__user {
 	margin-top: 6px;
+}
+
+.commentExpand {
+	height: calc(100% - 50px);
 }
 
 .current {
