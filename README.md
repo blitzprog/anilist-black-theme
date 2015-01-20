@@ -1,4 +1,4 @@
-# Nighthawk
+# Anilist Black
 
 This is a [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe) theme for anilist.co
 
